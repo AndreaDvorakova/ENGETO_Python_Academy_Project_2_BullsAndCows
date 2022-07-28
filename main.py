@@ -20,7 +20,7 @@ if __name__ == '__main__':
     n_list = convert(n)
 
     #pro rychlejsi testovani staci odmazat # pred printem
-    print(n_list)
+    #print(n_list)
     # promenne pro pocitani
     bulls = 0
     cows = 0
