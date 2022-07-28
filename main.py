@@ -8,25 +8,25 @@ from Functions import *
 import random
 
 if __name__ == '__main__':
-    # uvod pro uzivatele
+    # user welcome
     ODDELOVAC = '-'*50
     print('Hi there!')
     print(ODDELOVAC)
     print("I've generated a random 4 digit number for you.\nLet's play bulls and cows game.")
     print(ODDELOVAC)
 
-    # generovani 4mistniho random cisla
+    # generate random 4digit number
     n = str(random.randint(1000, 9999))
     n_list = convert(n)
 
-    #pro rychlejsi testovani staci odmazat # pred printem
+    #for quick testing print out the next row
     #print(n_list)
-    # promenne pro pocitani
+    # variables for counting
     bulls = 0
     cows = 0
     attempt = 1
 
-    # cyklus pro hadani se zabudovanou funkci inputu a pocitani cows, bulls a pokusu
+    # loop for guessing with function for input and cows, bulls and attempt counting
     while bulls != 4 and cows != 4:
         ui_num = erVal(print_promnt())
         ui_num_list = convert(ui_num)
