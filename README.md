@@ -12,3 +12,6 @@ The user input is checked, it has to be:
 * the number of "bulls", which are digits in the guess that are in the correct position.
 * the number of "cows", which are digits in the guess that are in your secret number but are located in the wrong position. 
 * every attempt of guess, the final number is presented to the user
+
+### Tip: 
+For easy testing delete the # in main.py line 23.
