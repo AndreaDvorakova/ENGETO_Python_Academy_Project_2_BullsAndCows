@@ -16,7 +16,9 @@ if __name__ == '__main__':
     print(ODDELOVAC)
 
     # generate random 4digit number
-    n = str(random.randint(1000, 9999))
+    number_digit_first = ''.join(random.sample("123456789", 1))
+    number_digits = ''.join(random.sample("0123456789", 3))
+    n = (number_digit_first + number_digits)
     n_list = convert(n)
 
     #for quick testing print out the next row
